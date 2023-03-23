@@ -69,7 +69,7 @@ RunService:BindToRenderStep("AimLock", 0, function()
     local mouse = player:GetMouse()
     mouse.KeyDown:Connect(function(key)
     
-        if key == "x" then
+        if key == "p" then
                 
         
         
