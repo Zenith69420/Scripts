@@ -15,8 +15,8 @@ local CurrentCamera = Workspace.CurrentCamera
 local DaHoodSettings = {
     SilentAim = true,
     AimLock = false,
-    Prediction = 0.1258824,
-    AimLockKeybind = Enum.KeyCode.E
+    Prediction = 0.1256,
+    AimLockKeybind = Enum.KeyCode.C
 }
 getgenv().DaHoodSettings = DaHoodSettings
 
@@ -69,7 +69,7 @@ RunService:BindToRenderStep("AimLock", 0, function()
     local mouse = player:GetMouse()
     mouse.KeyDown:Connect(function(key)
     
-        if key == "p" then
+        if key == "P" then
                 
         
         
