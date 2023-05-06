@@ -1,4 +1,4 @@
--- // zenith
+-- // homixider
 
 if getgenv().Aiming then return getgenv().Aiming end
 
@@ -40,13 +40,13 @@ getgenv().Aiming = {
     Enabled = true,
 
     ShowFOV = false,
-    FOV = 25,
-    FOVSides = 300,
+    FOV = 15,
+    FOVSides = 100,
     FOVColour = Color3fromRGB(190,0,0),
 
     VisibleCheck = true,
     
-    HitChance = 115,
+    HitChance = 100,
 
     Selected = nil,
     SelectedPart = nil,
@@ -73,7 +73,7 @@ local circle = Drawingnew("Circle")
 circle.Transparency = 0.5
 circle.Thickness = 2
 circle.Color = Aiming.FOVColour
-circle.Filled = false
+circle.Filled = true
 Aiming.FOVCircle = circle
 
 -- // Update
